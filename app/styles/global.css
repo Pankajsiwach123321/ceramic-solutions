@@ -7,3 +7,6 @@ html,
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+.text_stroke_1:hover {
+  -webkit-text-stroke: 1px;
+}
