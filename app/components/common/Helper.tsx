@@ -1,9 +1,1 @@
-import React from 'react'
-
-const Helper = () => {
-  return (
-    <div>Helper</div>
-  )
-}
-
-export default Helper
+export const navLinksList=["Home","About","Services","Portfolio","Contact us","Request a Qoute"]
