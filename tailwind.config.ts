@@ -26,9 +26,20 @@ const config: Config = {
         "light-pink": "#FFEBEB",
       },
       backgroundImage: {},
+      borderRadius: {
+        6:"24px"
+      },
       boxShadow: {
         cards: "0px 0px 12px 3px #B6B6B640",
       },
+      lineHeight: {
+        120:"120%",
+        125:"125%",
+        130:"130%",
+        140:"140%",
+        150:"150%",
+        160:"160%",
+      }
     },
   },
   plugins: [require("@tailwindcss/typography")],
