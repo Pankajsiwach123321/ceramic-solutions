@@ -7,6 +7,16 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "24px",
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1188px",
+    },
     extend: {
       fontSize: {
         "custom-xs": "10px",
@@ -32,6 +42,7 @@ const config: Config = {
       },
       boxShadow: {
         cards: "0px 0px 12px 3px #B6B6B640",
+        "faq-card": "0px 2px 44px 3px #5757571A",
       },
       lineHeight: {
         120:"120%",
