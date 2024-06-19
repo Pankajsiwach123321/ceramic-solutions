@@ -1,4 +1,12 @@
-import { ChooseCallingIcon, ChooseStarIcon, ChooseThumbsUpIcon } from "./Icons";
+import {
+  ChooseCallingIcon,
+  ChooseStarIcon,
+  ChooseThumbsUpIcon,
+  Facebook,
+  Instagram,
+  LinkedIn,
+  XTwitter,
+} from "./Icons";
 
 export const chooseUsListData = [
   {
@@ -59,11 +67,101 @@ export const navLinksList = [
 ];
 
 export const serviceAreasList = [
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville"
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+];
+
+export const socialMediaLinks = [
+  {
+    icon: <Facebook />,
+    url: "https://www.facebook.com",
+  },
+  {
+    icon: <Instagram />,
+    url: "https://www.instagram.com/",
+  },
+  {
+    icon: <XTwitter />,
+    url: "https://x.com/",
+  },
+  {
+    icon: <LinkedIn />,
+    url: "https://www.linkedin.com/",
+  },
+];
+
+export const footerLinks = [
+  {
+    heading: "Links",
+    links: [
+      {
+        title: "home",
+        url: "/",
+      },
+      {
+        title: "about us",
+        url: "/",
+      },
+      {
+        title: "Services",
+        url: "/",
+      },
+      {
+        title: "Showcase",
+        url: "/",
+      },
+    ],
+  },
+  {
+    heading: "legal",
+    links: [
+      {
+        title: "terms of use",
+        url: "/",
+      },
+      {
+        title: "privacy policy",
+        url: "/",
+      },
+      {
+        title: "cookie policy",
+        url: "/",
+      },
+    ],
+  },
+  {
+    heading: "product",
+    links: [
+      {
+        title: "take tour",
+        url: "/",
+      },
+      {
+        title: "live chat",
+        url: "/",
+      },
+      {
+        title: "reveiws",
+        url: "/",
+      },
+    ],
+  },
 ];
