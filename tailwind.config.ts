@@ -27,6 +27,7 @@ const config: Config = {
       backgroundImage: {},
       boxShadow: {
         cards: "0px 0px 12px 3px #B6B6B640",
+        "faq-card":"0px 2px 44px 3px #5757571A"
       },
     },
   },
