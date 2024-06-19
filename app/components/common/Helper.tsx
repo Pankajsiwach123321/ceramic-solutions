@@ -57,3 +57,13 @@ export const navLinksList = [
   "Contact us",
   "Request a Qoute",
 ];
+
+export const serviceAreasList = [
+  "Knoxville", "Sevierville", "Maynardville",
+  "Knoxville", "Sevierville", "Maynardville",
+  "Knoxville", "Sevierville", "Maynardville",
+  "Knoxville", "Sevierville", "Maynardville",
+  "Knoxville", "Sevierville", "Maynardville",
+  "Knoxville", "Sevierville", "Maynardville",
+  "Knoxville", "Sevierville"
+];
