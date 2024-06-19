@@ -37,20 +37,21 @@ const config: Config = {
       },
       backgroundImage: {},
       borderRadius: {
-        6: "24px",
+        6:"24px",
+        14:"56px"
       },
       boxShadow: {
         cards: "0px 0px 12px 3px #B6B6B640",
         "faq-card": "0px 2px 44px 3px #5757571A",
       },
       lineHeight: {
-        120: "120%",
-        125: "125%",
-        130: "130%",
-        140: "140%",
-        150: "150%",
-        160: "160%",
-      },
+        120:"120%",
+        126:"126%",
+        132:"132%",
+        140:"140%",
+        150:"150%",
+        160:"160%",
+      }
     },
   },
   plugins: [require("@tailwindcss/typography")],

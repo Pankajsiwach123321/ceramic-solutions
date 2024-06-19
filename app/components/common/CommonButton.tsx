@@ -1,28 +1,31 @@
 import Link from "next/link";
 import { cn } from "@/app/utils/helpers";
-
-interface NextLinkButtonProps
-  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+type NextLinkButtonProps = {
   children: React.ReactNode;
-  href: string;
+  href?: string;
+  className?: string;
+  header?: boolean;
 }
 
 export function CommonButton({
   children,
   className,
   href,
-  ...rest
+  header,
 }: NextLinkButtonProps) {
+  const buttonHeader =
+    "py-3.5 px-5 !leading-126 inline-flex justify-center items-center gap-x-5";
+  const ctaClass = `${className && className} capitalize font-bold text-white rounded-14 bg-red hover:text-black transition-all duration-300 ease-linear hover:shadow-[0_-64px_0_0_#ffffff_inset] border border-solid border-transparent hover:border-red
+       ${header ? buttonHeader : "text-lg px-8 py-5 !leading-120 inline-block"}`;
   return (
-    <Link
-      {...rest}
-      href={href}
-      className={cn(
-        "flex h-10 items-center rounded-lg px-4 text-sm font-medium text-white transition-colors  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 aria-disabled:cursor-not-allowed aria-disabled:opacity-50",
-        className,
+    <>
+      {href ? (
+        <Link  href={href} className={ctaClass} >
+     {children}
+        </Link>
+      ) : (
+        <button className={ctaClass}>{children}</button>
       )}
-    >
-      {children}
-    </Link>
+    </>
   );
 }
