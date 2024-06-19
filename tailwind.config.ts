@@ -22,13 +22,25 @@ const config: Config = {
         "dark-metal": "#1B2228",
         gray: "#81848A",
         "natural-black": "#010101",
-        "light-black": "020202",
+        "light-black": "#020202",
+        "light-pink": "#FFEBEB",
       },
       backgroundImage: {},
+      borderRadius: {
+        6:"24px"
+      },
       boxShadow: {
         cards: "0px 0px 12px 3px #B6B6B640",
         "faq-card":"0px 2px 44px 3px #5757571A"
       },
+      lineHeight: {
+        120:"120%",
+        125:"125%",
+        130:"130%",
+        140:"140%",
+        150:"150%",
+        160:"160%",
+      }
     },
   },
   plugins: [require("@tailwindcss/typography")],
