@@ -3,6 +3,7 @@ import { CommonButton } from "./components/common/CommonButton";
 import { CallIcon } from "./components/common/Icons";
 import { Button } from "./components/common/Button";
 import WhiteCard from "./components/custom-ui/WhiteCard";
+import PrimaryHeading from "./components/custom-ui/PrimaryHeading";
 
 export const metadata: Metadata = {
   title: "Pixel Perfect Webdesign | Web Design Knoxville TN",
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col bg-black items-center justify-between p-24'>
+    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
       {/* <CommonButton href='/contact' className='flex gap-2'>
         Book a Call <CallIcon svgClassName='h-6 w-6' />
       </CommonButton>
@@ -43,7 +44,8 @@ export default function Home() {
        <Button className='flex items-center justify-center gap-2'>
         Login <CallIcon svgClassName='h-6 w-6' />
        </Button> */}
-      <WhiteCard> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est adipisci illum odio doloremque aut fuga, nostrum cumque aperiam velit.</WhiteCard>
+      <WhiteCard border={true}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est adipisci illum odio doloremque aut fuga, nostrum cumque aperiam velit.</WhiteCard>
+      <PrimaryHeading > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore assumenda sed ea cupiditate omnis delectus! Quibusdam tempora consectetur soluta dolorum commodi quam ullam ab tenetur, cum ea, eum minus officiis!</PrimaryHeading>
     </main>
   );
 }
