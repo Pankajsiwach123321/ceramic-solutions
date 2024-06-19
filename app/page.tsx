@@ -4,6 +4,7 @@ import { CallIcon } from "./components/common/Icons";
 import { Button } from "./components/common/Button";
 import WhiteCard from "./components/custom-ui/WhiteCard";
 import PrimaryHeading from "./components/custom-ui/PrimaryHeading";
+import Paragraph from "./components/custom-ui/Paragraph";
 
 export const metadata: Metadata = {
   title: "Pixel Perfect Webdesign | Web Design Knoxville TN",
@@ -45,7 +46,8 @@ export default function Home() {
         Login <CallIcon svgClassName='h-6 w-6' />
        </Button> */}
       <WhiteCard border={true}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est adipisci illum odio doloremque aut fuga, nostrum cumque aperiam velit.</WhiteCard>
-      <PrimaryHeading > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore assumenda sed ea cupiditate omnis delectus! Quibusdam tempora consectetur soluta dolorum commodi quam ullam ab tenetur, cum ea, eum minus officiis!</PrimaryHeading>
+      <PrimaryHeading > Lorem ipsum</PrimaryHeading>
+<Paragraph>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente dolorum non at dolores excepturi aspernatur consequatur magni necessitatibus similique vel.</Paragraph>
     </main>
   );
 }
