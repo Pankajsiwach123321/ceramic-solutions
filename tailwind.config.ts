@@ -12,29 +12,21 @@ const config: Config = {
         "custom-xs": "10px",
         "custom-3xl": "32px",
         "custom-4xl": "40px",
-        "custom-5xl": "52px",
+        "custom-5xl": "56px",
         "custom-6xl": "64px",
       },
       colors: {
-        red: "#650304",
-        mineShaft: "#2c2c2c",
-        lightBlack: "#060606",
-        lightDark: "#060707",
-        robinBlue: "#00BCD4",
-        offGray: "#848484",
+        red: "#ff0000",
+        "off-black": "#141414",
+        "dark-red": "#B40001",
+        "dark-metal": "#1B2228",
+        gray: "#81848A",
+        "natural-black": "#010101",
+        "light-black": "020202",
       },
-      backgroundImage: {
-        blackBlurGradient:
-          "linear-gradient(83.69deg, rgba(0, 188, 212, 0.04) -9.02%, rgba(49, 69, 236, 0.04) 149.26%)",
-        gradiantBlue:
-          "linear-gradient(83.69deg, #00BCD4 -9.02%, #3145EC 149.26%)",
-        faqBtnBg:
-          "linear-gradient(84deg, rgba(0, 188, 212, 0.04) -9.02%, rgba(49, 69, 236, 0.04) 149.26%)",
-        tableContentsBg:
-          "linear-gradient(84deg, rgba(0, 188, 212, 0.04) -9.02%, rgba(49, 69, 236, 0.04) 149.26%)",
-      },
-      fontFamily: {
-        inter: ["var(--font-inter)", "sans-serif"],
+      backgroundImage: {},
+      boxShadow: {
+        cards: "0px 0px 12px 3px #B6B6B640",
       },
     },
   },
