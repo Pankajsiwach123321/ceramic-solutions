@@ -7,7 +7,8 @@ import { navLinksList } from "./Helper";
 const Header = () => {
   return (
     <>
-      <nav className='flex items-center justify-between rounded-6 bg-white'>
+      <div className="container mx-auto fixed left-1/2 -translate-x-1/2 top-6">
+      <nav className='flex items-center justify-between rounded-6 bg-white p-4'>
         
         <Link href='/'>
           
@@ -18,11 +19,12 @@ const Header = () => {
             alt='page logo'
           />
         </Link>
-        <div className=" flex">
+        <div className=" flex gap-x-7 items-center">
           
-          {navLinksList.map((obj, index) => <Link href="" key={index}> {obj}</Link>)}
-        </div>
-      </nav>
+          {navLinksList.map((obj, index) => <Link href={`/${obj.toLowerCase().replace(/ /g,"-")}`} className="text-black font-normal leading-160" key={index}> {obj}</Link>)}
+          </div>
+          <CommonButton header href="tel:(865)621-1717">(865) 621-1717</CommonButton>
+      </nav></div>
     </>
   );
 };

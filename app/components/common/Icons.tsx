@@ -1,4 +1,3 @@
-import React from "react";
 
 interface CallIconProps extends React.SVGProps<SVGSVGElement> {
   containerClassName?: string;
