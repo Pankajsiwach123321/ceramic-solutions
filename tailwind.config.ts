@@ -22,7 +22,8 @@ const config: Config = {
         "dark-metal": "#1B2228",
         gray: "#81848A",
         "natural-black": "#010101",
-        "light-black": "020202",
+        "light-black": "#020202",
+        "light-pink": "#FFEBEB",
       },
       backgroundImage: {},
       boxShadow: {

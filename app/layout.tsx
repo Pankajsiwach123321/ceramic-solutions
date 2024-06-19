@@ -4,6 +4,9 @@ import { GoogleTagManager } from "@next/third-parties/google";
 
 import "@/app/styles/global.css";
 import { inter } from "./lib/fonts";
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
+import Hero from "./components/common/Hero";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.CHANGEME.com"),
@@ -81,7 +84,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.variable} font-inter`}>{children}</body>
+      <body className={`${inter.variable} font-inter`}>
+        <Header />
+        <Hero/>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
