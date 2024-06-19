@@ -1,5 +1,11 @@
 import { ChooseCallingIcon, ChooseStarIcon, ChooseThumbsUpIcon } from "./Icons";
-
+import kitchenImage from "../../../public/assets/images/homepage/kitchen-img.png";
+import showersImage from "../../../public/assets/images/homepage/shower-img.png";
+import flooringImage from "../../../public/assets/images/homepage/flooring-img.png";
+import largeTilingImage from "../../../public/assets/images/homepage/large-tiling-img.png";
+import wallTilingImage from "../../../public/assets/images/homepage/wall-tiling.png";
+import adaShowersImage from "../../../public/assets/images/homepage/ada-showers-img.png";
+import fireplaceTilingImage from "../../../public/assets/images/homepage/fireplace-tiling.png";
 export const chooseUsListData = [
   {
     icon: <ChooseStarIcon />,
@@ -55,15 +61,66 @@ export const navLinksList = [
   "Services",
   "Portfolio",
   "Contact us",
-  "Request a Qoute",
+  "Request a Quote",
 ];
 
 export const serviceAreasList = [
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville", "Maynardville",
-  "Knoxville", "Sevierville"
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+  "Maynardville",
+  "Knoxville",
+  "Sevierville",
+];
+
+export const whatWeDoCardsData = [
+  {
+    image: kitchenImage,
+    title: "Kitchen Backsplash",
+    description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+  },
+  {
+    image: showersImage,
+    title: "Custom Showers",
+    description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+  },
+  {
+    image: flooringImage,
+    title: "Custom Flooring",
+    description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+  },
+  {
+    image: largeTilingImage,
+    title: "Large Format Tiling",
+    description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+  },
+  {
+    image: wallTilingImage,
+    title: "Wall Tiling",
+    description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+  },
+  {
+    image: adaShowersImage,
+    title: "ADA Compliant Showers",
+    description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+  },
+  {
+    image: fireplaceTilingImage,
+    title: "Fireplace Tiling",
+    description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+  },
 ];
