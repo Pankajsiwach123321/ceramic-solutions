@@ -1,75 +1,146 @@
 import React from "react";
 
-interface CallIconProps extends React.SVGProps<SVGSVGElement> {
+interface IconProps extends React.SVGProps<SVGSVGElement> {
   containerClassName?: string;
   svgClassName?: string;
 }
 
-export const CallIcon: React.FC<CallIconProps> = ({
-  containerClassName,
-  svgClassName,
-  ...svgProps
-}) => {
-  const containerClasses = `rounded-full border-2 border-cyan-600 bg-blue-900 ${
-    containerClassName || ""
-  }`;
+// export const CallIcon: React.FC<IconProps> = ({
+//   containerClassName,
+//   svgClassName,
+//   ...svgProps
+// }) => {
+//   return (
+//     <div className={containerClassName}>
+//       <svg
+//         width='32'
+//         height='32'
+//         viewBox='0 0 100 100'
+//         fill='none'
+//         xmlns='http://www.w3.org/2000/svg'
+//         {...svgProps}
+//         className={`${svgProps.className} ${svgClassName}`}
+//       >
+//         <path
+//           className='stroke1 fill1'
+//           d='M25.7071 25.1213L35.6066 35.0208C35.9971 35.4113 35.9971 36.0445 35.6066 36.435L32.7782 39.2635C32.3877 39.654 31.7545 39.654 31.364 39.2635L21.4645 29.364C21.0739 28.9734 21.0739 28.3403 21.4645 27.9497L24.2929 25.1213C24.6834 24.7308 25.3166 24.7308 25.7071 25.1213Z'
+//           fill='rgba(255,255,255,0)'
+//           stroke='rgba(255,255,255,1)'
+//           strokeWidth='3.0px'
+//         ></path>
+//         <path
+//           className='stroke1 fill1'
+//           d='M65.3051 64.7193L75.2046 74.6188C75.5951 75.0094 75.5951 75.6425 75.2046 76.0331L72.3762 78.8615C71.9857 79.252 71.3525 79.252 70.962 78.8615L61.0625 68.962C60.672 68.5715 60.672 67.9383 61.0625 67.5478L63.8909 64.7193C64.2814 64.3288 64.9146 64.3288 65.3051 64.7193Z'
+//           fill='rgba(255,255,255,0)'
+//           stroke='rgba(255,255,255,1)'
+//           strokeWidth='3.0px'
+//         ></path>
+//         <path
+//           className='stroke1 fill1'
+//           d='M18.9896 30.4246L21.1109 28.3033C21.5014 27.9128 22.1346 27.9128 22.5251 28.3033L32.4246 38.2028C32.8151 38.5933 32.8151 39.2265 32.4246 39.617L31.0104 41.0312C29.0578 42.9839 29.0578 46.1497 31.0104 48.1023L52.2236 69.3155C54.1762 71.2681 57.342 71.2681 59.2947 69.3155L60.7089 67.9013C61.0994 67.5108 61.7326 67.5108 62.1231 67.9013L72.0226 77.8008C72.4131 78.1913 72.4131 78.8245 72.0226 79.215L69.9013 81.3363C64.8244 86.4132 56.5933 86.4132 51.5165 81.3363L18.9896 48.8094C13.9128 43.7326 13.9128 35.5015 18.9896 30.4246Z'
+//           fill='rgba(255,255,255,0)'
+//           stroke='rgba(255,255,255,1)'
+//           strokeWidth='3.0px'
+//         ></path>
+//         <g id='arrow'>
+//           <path
+//             className='stroke2'
+//             d='M49.5388 36.0562H82.172M82.172 36.0562L69.174 23M82.172 36.0562L69.174 48.8346'
+//             stroke='rgba(255,255,255,1)'
+//             strokeWidth='3.0px'
+//             strokeLinecap='round'
+//           ></path>
+//         </g>
+//       </svg>
+//     </div>
+//   );
+// };
 
+export const ChooseStarIcon: React.FC<IconProps> = ({}) => {
   return (
-    <div className={containerClasses}>
-      <svg
-        width='32'
-        height='32'
-        viewBox='0 0 100 100'
-        fill='none'
-        xmlns='http://www.w3.org/2000/svg'
-        {...svgProps}
-        className={`${svgProps.className} ${svgClassName}`}
-      >
-        <path
-          className='stroke1 fill1'
-          d='M25.7071 25.1213L35.6066 35.0208C35.9971 35.4113 35.9971 36.0445 35.6066 36.435L32.7782 39.2635C32.3877 39.654 31.7545 39.654 31.364 39.2635L21.4645 29.364C21.0739 28.9734 21.0739 28.3403 21.4645 27.9497L24.2929 25.1213C24.6834 24.7308 25.3166 24.7308 25.7071 25.1213Z'
-          fill='rgba(255,255,255,0)'
-          stroke='rgba(255,255,255,1)'
-          strokeWidth='3.0px'
-          // className="line-phone2"
-          // style="animation-duration: 1.6s;"
-        ></path>
-        <path
-          className='stroke1 fill1'
-          d='M65.3051 64.7193L75.2046 74.6188C75.5951 75.0094 75.5951 75.6425 75.2046 76.0331L72.3762 78.8615C71.9857 79.252 71.3525 79.252 70.962 78.8615L61.0625 68.962C60.672 68.5715 60.672 67.9383 61.0625 67.5478L63.8909 64.7193C64.2814 64.3288 64.9146 64.3288 65.3051 64.7193Z'
-          fill='rgba(255,255,255,0)'
-          stroke='rgba(255,255,255,1)'
-          strokeWidth='3.0px'
-          // className="line-phone2"
-          // style="animation-duration: 1.6s;"
-        ></path>
-        <path
-          className='stroke1 fill1'
-          d='M18.9896 30.4246L21.1109 28.3033C21.5014 27.9128 22.1346 27.9128 22.5251 28.3033L32.4246 38.2028C32.8151 38.5933 32.8151 39.2265 32.4246 39.617L31.0104 41.0312C29.0578 42.9839 29.0578 46.1497 31.0104 48.1023L52.2236 69.3155C54.1762 71.2681 57.342 71.2681 59.2947 69.3155L60.7089 67.9013C61.0994 67.5108 61.7326 67.5108 62.1231 67.9013L72.0226 77.8008C72.4131 78.1913 72.4131 78.8245 72.0226 79.215L69.9013 81.3363C64.8244 86.4132 56.5933 86.4132 51.5165 81.3363L18.9896 48.8094C13.9128 43.7326 13.9128 35.5015 18.9896 30.4246Z'
-          fill='rgba(255,255,255,0)'
-          stroke='rgba(255,255,255,1)'
-          strokeWidth='3.0px'
-          // className="line-phone2"
-          // style="animation-duration: 1.6s;"
-        ></path>
-        <g
-          id='arrow'
-          // animate={{ x: [-3, 3, -3] }}
-          // transition={{
-          //   duration: 1.6,
-          //   repeat: Infinity,
-          //   type: 'keyframes',
-          // }}
-        >
-          <path
-            className='stroke2'
-            d='M49.5388 36.0562H82.172M82.172 36.0562L69.174 23M82.172 36.0562L69.174 48.8346'
-            stroke='rgba(255,255,255,1)'
-            strokeWidth='3.0px'
-            strokeLinecap='round'
-          ></path>
-        </g>
-      </svg>
-    </div>
+    <svg
+      width='62'
+      height='62'
+      viewBox='0 0 62 62'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <rect width='62' height='62' rx='10' fill='#B40001' fill-opacity='0.1' />
+      <path
+        opacity='0.15'
+        d='M31 37.6667L23 41.6667L25 33.6667L19 27L27.6667 26.3333L31 19L34.3333 26.3333L43 27L37 33.6667L39 41.6667L31 37.6667Z'
+        fill='#FF0000'
+      />
+      <path
+        d='M31 37.6667L23 41.6667L25 33.6667L19 27L27.6667 26.3333L31 19L34.3333 26.3333L43 27L37 33.6667L39 41.6667L31 37.6667Z'
+        stroke='#FF0000'
+        stroke-width='2'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      />
+    </svg>
   );
 };
+export const ChooseThumbsUpIcon: React.FC<IconProps> = ({}) => {
+  return (
+    <svg
+      width='62'
+      height='62'
+      viewBox='0 0 62 62'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <rect width='62' height='62' rx='10' fill='#B40001' fill-opacity='0.1' />
+      <path
+        opacity='0.15'
+        fill-rule='evenodd'
+        clip-rule='evenodd'
+        d='M25.6665 28.3334V41.6667H38.147C39.4182 41.6667 40.5126 40.7695 40.7619 39.523L42.3619 31.523C42.6919 29.8729 41.4298 28.3334 39.747 28.3334H33.6665L36.9008 23.4819C37.9238 21.9475 37.1178 19.8629 35.3288 19.4156L35.2654 19.3998C34.2855 19.1548 33.2513 19.4845 32.5939 20.2514L25.6665 28.3334Z'
+        fill='#FF0000'
+      />
+      <path
+        d='M25.6668 28.3334V41.6667M25.6668 28.3334L20.3335 28.3334V41.6667L25.6668 41.6667M25.6668 28.3334L32.5943 20.2514C33.2516 19.4845 34.2858 19.1548 35.2657 19.3998L35.3291 19.4156C37.1182 19.8629 37.9241 21.9475 36.9012 23.4819L33.6668 28.3334H39.7474C41.4301 28.3334 42.6923 29.8729 42.3622 31.523L40.7622 39.523C40.5129 40.7695 39.4185 41.6667 38.1474 41.6667L25.6668 41.6667'
+        stroke='#FF0000'
+        stroke-width='2.0625'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      />
+    </svg>
+  );
+};
+export const ChooseCallingIcon: React.FC<IconProps> = ({}) => {
+  return (
+    <svg
+      width='62'
+      height='62'
+      viewBox='0 0 62 62'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <rect width='62' height='62' rx='10' fill='#B40001' fill-opacity='0.1' />
+      <path
+        opacity='0.15'
+        d='M42.9992 36.9689V40.5819C43.0048 41.9631 41.7629 43.1164 40.3685 42.9906C28.3333 43 19 33.58 19.0094 21.6256C18.8838 20.2386 20.0314 19.0014 21.4108 19.0001H25.031C25.6166 18.9944 26.1844 19.2013 26.6284 19.5825C27.8908 20.666 28.7028 24.3437 28.3904 25.8057C28.1465 26.9472 26.9959 27.7457 26.2136 28.5265C27.9314 31.5416 30.4329 34.0381 33.454 35.7525C34.2362 34.9718 35.0364 33.8234 36.1801 33.58C37.6473 33.2677 41.3486 34.0809 42.4278 35.3521C42.8105 35.8028 43.0139 36.3783 42.9992 36.9689Z'
+        fill='#FF0000'
+      />
+      <path
+        d='M34.3333 23.6667C35.3162 23.8584 36.2919 24.2919 37 25C37.7081 25.7081 38.1416 26.6838 38.3333 27.6667M35 19C37.042 19.2269 38.8796 20.2148 40.3333 21.6667C41.7871 23.1186 42.7706 24.9582 43 27M42.9992 36.9689V40.5819C43.0048 41.963 41.7629 43.1164 40.3685 42.9906C28.3333 43 19 33.58 19.0094 21.6256C18.8838 20.2386 20.0314 19.0014 21.4108 19.0001H25.031C25.6166 18.9944 26.1844 19.2013 26.6284 19.5825C27.8908 20.666 28.7028 24.3437 28.3904 25.8057C28.1465 26.9472 26.9959 27.7457 26.2136 28.5265C27.9314 31.5416 30.4329 34.0381 33.454 35.7525C34.2362 34.9718 35.0364 33.8234 36.1801 33.58C37.6473 33.2677 41.3486 34.0809 42.4278 35.3521C42.8105 35.8028 43.0139 36.3783 42.9992 36.9689Z'
+        stroke='#FF0000'
+        stroke-width='2'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      />
+    </svg>
+  );
+};
+
+const Icons = () => (
+  <div>
+    {/* <CallIcon containerClassName='icon-container' svgClassName='call-icon' /> */}
+    <ChooseStarIcon />
+    <ChooseThumbsUpIcon />
+    <ChooseCallingIcon />
+  </div>
+);
+
+export default Icons;
