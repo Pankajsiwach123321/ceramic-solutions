@@ -4,13 +4,14 @@ type NextLinkButtonProps = {
   children: React.ReactNode;
   href?: string;
   className?: string;
+  type?: "button" | "submit" | "reset" ;
   header?: boolean;
 }
 
 export function CommonButton({
   children,
   className,
-  href,
+  href,type,
   header,
 }: NextLinkButtonProps) {
   const buttonHeader =
@@ -24,7 +25,7 @@ export function CommonButton({
      {children}
         </Link>
       ) : (
-        <button className={ctaClass}>{children}</button>
+        <button type={`${type?type:"button"}`} className={ctaClass}>{children}</button>
       )}
     </>
   );

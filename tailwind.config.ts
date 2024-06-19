@@ -37,6 +37,7 @@ const config: Config = {
       },
       backgroundImage: {},
       borderRadius: {
+        4:"16px",
         6:"24px",
         14:"56px"
       },

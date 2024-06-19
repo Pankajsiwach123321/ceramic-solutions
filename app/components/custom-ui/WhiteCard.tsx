@@ -1,7 +1,7 @@
 import React from 'react'
 type WhiteCardProps = React.ComponentPropsWithoutRef<"div"> & {
   children: React.ReactNode;
-  border:Boolean
+  border?:Boolean
 };
 const WhiteCard = ({ children, className,border,...rest }: WhiteCardProps) => {
   return (
