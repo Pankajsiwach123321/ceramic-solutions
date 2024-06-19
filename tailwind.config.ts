@@ -35,24 +35,28 @@ const config: Config = {
         "light-black": "#020202",
         "light-pink": "#FFEBEB",
       },
-      backgroundImage: {},
+      backgroundImage: {
+        "footer-border-gradient":
+          "linear-gradient(90deg, rgba(22, 22, 22, 0) 0%, #696969 51.56%, rgba(22, 22, 22, 0) 100%)",
+      },
       borderRadius: {
-        4:"16px",
-        6:"24px",
-        14:"56px"
+        4: "16px",
+        6: "24px",
+        14: "56px",
       },
       boxShadow: {
         cards: "0px 0px 12px 3px #B6B6B640",
         "faq-card": "0px 2px 44px 3px #5757571A",
+        "footer-input": "-13.01px 13.01px 104.09px 0px #A1A1A11A",
       },
       lineHeight: {
-        120:"120%",
-        126:"126%",
-        132:"132%",
-        140:"140%",
-        150:"150%",
-        160:"160%",
-      }
+        120: "120%",
+        126: "126%",
+        132: "132%",
+        140: "140%",
+        150: "150%",
+        160: "160%",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

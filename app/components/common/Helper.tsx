@@ -1,4 +1,12 @@
-import { ChooseCallingIcon, ChooseStarIcon, ChooseThumbsUpIcon } from "./Icons";
+import {
+  ChooseCallingIcon,
+  ChooseStarIcon,
+  ChooseThumbsUpIcon,
+  Facebook,
+  Instagram,
+  LinkedIn,
+  XTwitter,
+} from "./Icons";
 import kitchenImage from "../../../public/assets/images/homepage/kitchen-img.png";
 import showersImage from "../../../public/assets/images/homepage/shower-img.png";
 import flooringImage from "../../../public/assets/images/homepage/flooring-img.png";
@@ -6,6 +14,7 @@ import largeTilingImage from "../../../public/assets/images/homepage/large-tilin
 import wallTilingImage from "../../../public/assets/images/homepage/wall-tiling.png";
 import adaShowersImage from "../../../public/assets/images/homepage/ada-showers-img.png";
 import fireplaceTilingImage from "../../../public/assets/images/homepage/fireplace-tiling.png";
+
 export const chooseUsListData = [
   {
     icon: <ChooseStarIcon />,
@@ -122,5 +131,82 @@ export const whatWeDoCardsData = [
     image: fireplaceTilingImage,
     title: "Fireplace Tiling",
     description: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+  },
+];
+
+export const socialMediaLinks = [
+  {
+    icon: <Facebook />,
+    url: "https://www.facebook.com",
+  },
+  {
+    icon: <Instagram />,
+    url: "https://www.instagram.com/",
+  },
+  {
+    icon: <XTwitter />,
+    url: "https://x.com/",
+  },
+  {
+    icon: <LinkedIn />,
+    url: "https://www.linkedin.com/",
+  },
+];
+
+export const footerLinks = [
+  {
+    heading: "Links",
+    links: [
+      {
+        title: "home",
+        url: "/",
+      },
+      {
+        title: "about us",
+        url: "/",
+      },
+      {
+        title: "Services",
+        url: "/",
+      },
+      {
+        title: "Showcase",
+        url: "/",
+      },
+    ],
+  },
+  {
+    heading: "legal",
+    links: [
+      {
+        title: "terms of use",
+        url: "/",
+      },
+      {
+        title: "privacy policy",
+        url: "/",
+      },
+      {
+        title: "cookie policy",
+        url: "/",
+      },
+    ],
+  },
+  {
+    heading: "product",
+    links: [
+      {
+        title: "take tour",
+        url: "/",
+      },
+      {
+        title: "live chat",
+        url: "/",
+      },
+      {
+        title: "reveiws",
+        url: "/",
+      },
+    ],
   },
 ];
