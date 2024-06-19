@@ -12,16 +12,16 @@ const Header = () => {
   return (
     <>
       <div className="container mx-auto fixed left-1/2 -translate-x-1/2 top-6 z-10">
-      <nav className='flex items-center justify-between rounded-6 bg-white p-4'>
+      <nav className='flex items-center justify-between rounded-6 bg-white p-3.5 md:p-4'>
         <Link href='/'>
-          <Image
+          <Image className="w-[97px] h-12 md:width-[106px] md:h-[52px]"
             src='/assets/images/homepage/logo.svg'
             height={52}
             width={106}
             alt='page logo'
           />
           </Link>
-          <div onClick={()=> setIsNavVisible(!isNavVisible)} className=" size-9 relative lg:hidden">
+          <div onClick={()=> setIsNavVisible(!isNavVisible)} className=" size-[26px] sm:size-8 md:size-9 relative lg:hidden">
             <Image className={`transition-all duration-300 ease-linear absolute h-full w-full top-0 left-0 ${isNavVisible?" opacity-0":"opacity-100"}`} height={26} width={26} src="/assets/images/homepage/open-toggle.svg" alt="nav-toggle-open" />
             <Image className={`transition-all duration-300 ease-linear absolute h-full w-full top-0 left-0 ${isNavVisible?" opacity-100":"opacity-0"}`} height={26} width={26} src="/assets/images/homepage/cross-icon.svg" alt="nav-toggle-close" />
           </div>
