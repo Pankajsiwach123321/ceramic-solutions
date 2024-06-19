@@ -1,8 +1,10 @@
 import React from 'react'
-
-const WhiteCard = () => {
+type WhiteCardProps = React.ComponentPropsWithoutRef<"div"> & {
+  children: React.ReactNode;
+};
+const WhiteCard = ({ children, className, ...rest }: WhiteCardProps) => {
   return (
-    <div>WhiteCard</div>
+    <div className={`${className} bg-white p-6 rounded-[20px]`}> {children}</div>
   )
 }
 
