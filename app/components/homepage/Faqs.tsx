@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { frequentQuestions } from "../common/Helper";
+import PrimaryHeading from "../custom-ui/PrimaryHeading";
+import Paragraph from "../custom-ui/Paragraph";
 
 const Faqs = () => {
   const [expandedQuestion, setExpandedQuestion] = useState(-1); // State to track expanded accordion item index
@@ -10,15 +12,20 @@ const Faqs = () => {
     setExpandedQuestion(expandedQuestion === index ? -1 : index);
   };
   return (
-    <div className='container mx-auto'>
+    <div className='container lg:py-[140px] sm:py-24 py-20'>
+      <PrimaryHeading>Frequently Asked Questions</PrimaryHeading>
+      <Paragraph className='max-w-[592px] sm:pb-8 pb-2 pt-5'>
+        Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt
+        primasofi dede facebooka: förutom tivaligt. Fejkade
+      </Paragraph>
       {frequentQuestions.map((value, index) => (
-        <div key={index} className='mx-auto w-full max-w-[992px] pb-6'>
+        <div key={index} className='mx-auto w-full max-w-[992px] md:pt-6 pt-4'>
           {/* Accordion item container */}
-          <div className='shadow-faq-card w-full rounded-2xl px-5 py-[21px]'>
+          <div className='shadow-faq-card w-full rounded-2xl px-4 py-2 sm:py-[21px] md:px-5'>
             {/* Accordion button */}
             <button
               type='button'
-              className='flex w-full items-center justify-between text-left text-lg font-normal !leading-[166%] text-black '
+              className='flex min-h-[78px] w-full items-center justify-between gap-4 text-left text-base font-normal !leading-[166%] text-black sm:min-h-0 sm:text-lg '
               onClick={() => toggleAccordion(index)}
               // aria-expanded={expandedQuestion === index}
               aria-controls={`faqs-text-${index}`}
@@ -47,7 +54,7 @@ const Faqs = () => {
               id={`faqs-text-${index}`}
               role='region'
               aria-labelledby={`faqs-title-${index}`}
-              className={`grid overflow-hidden text-sm  text-slate-600 transition-all duration-300 ease-in-out ${
+              className={`grid overflow-hidden text-base  text-slate-600 transition-all duration-300 ease-in-out ${
                 expandedQuestion === index
                   ? "grid-rows-[1fr] opacity-100"
                   : "grid-rows-[0fr] opacity-0"
@@ -55,7 +62,7 @@ const Faqs = () => {
             >
               {/* Description of the accordion item */}
               <div className='overflow-hidden'>
-                <p className=' pt-3 text-base font-normal !leading-[140%]'>
+                <p className=' pt-3 text-sm font-normal !leading-[140%] sm:text-base'>
                   {value.answer}
                 </p>
               </div>
