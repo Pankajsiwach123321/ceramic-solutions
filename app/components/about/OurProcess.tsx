@@ -8,7 +8,7 @@ import { CommonButton } from "../common/CommonButton";
 const OurProcess = () => {
   return (
     <div className='bg-light-pink py-16 sm:py-20 lg:py-[100px]'>
-      <div className='container mx-auto px-6 md:px-5 xl:max-w-[1180px]'>
+      <div className='container mx-auto px-6 xl:px-5 xl:max-w-[1180px]'>
         <PrimaryHeading>Our Process</PrimaryHeading>
         <Paragraph className='pt-4 xl:w-[590px]'>
           Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt
