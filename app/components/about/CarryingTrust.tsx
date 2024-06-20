@@ -16,7 +16,7 @@ const CarryingTrust = () => {
           >
             Carrying the Trust of thousands
           </PrimaryHeading>
-          <Paragraph maxWidth={584} left white className='mt-4'>
+          <Paragraph maxWidth={584} left white className='mt-4 md:mt-5'>
             Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt
             primasofi dede facebooka: förutom tivaligt. Fejkade nyheter
             eurosamma sol: teroktig,
