@@ -6,7 +6,7 @@ import { chooseUsListData } from "../common/Helper";
 
 const ChooseUs = () => {
   return (
-    <div className='container mx-auto px-6 py-20 sm:py-24 md:px-5 lg:py-[140px] xl:max-w-[1180px] '>
+    <div className='container mx-auto px-6 py-20 sm:py-24 xl:px-5 lg:py-[140px] xl:max-w-[1180px] '>
       <PrimaryHeading>Why Choose us?</PrimaryHeading>
       <Paragraph small className='pt-4 lg:pt-5 xl:w-[590px]'>
         Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt
