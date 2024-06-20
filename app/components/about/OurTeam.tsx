@@ -10,8 +10,8 @@ import { Pagination } from "swiper/modules";
 
 const OurTeam = () => {
   return (
-    <section className='py-20 sm:py-24 lg:py-[140px]'>
-      <div className='container mx-auto px-6 md:px-5 xl:max-w-[1180px]'>
+    <section className='py-20 team sm:py-24 lg:py-[140px]'>
+      <div className='container mx-auto px-6 xl:px-5 xl:max-w-[1180px]'>
         <PrimaryHeading>Get to know our team</PrimaryHeading>
         {/* mobile or tab view */}
         <Swiper

@@ -13,14 +13,14 @@ body {
 }
 
 /* swiper dots modify team  */
-.swiper-pagination {
-  bottom: 0 !important;
+.team .swiper-pagination {
+  bottom: 4px !important;
   transform: translateX(-50%) !important;
   left: 50% !important;
   width: 96px !important;
 }
 
-.swiper-pagination-bullet {
+.team .swiper-pagination-bullet {
   width: 10px !important;
   height: 10px !important;
   margin-left: 3px !important;
@@ -29,6 +29,6 @@ body {
   opacity: 1 !important;
 }
 
-.swiper-pagination-bullet-active {
+.team .swiper-pagination-bullet-active {
   background: #FF0000 !important;
 }

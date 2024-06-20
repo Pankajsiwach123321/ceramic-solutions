@@ -21,7 +21,7 @@ const TeamCard = (props: IProps) => {
   return (
     <>
       <Image
-        className='h-[344px] sm:h-[321px] w-full rounded-xl'
+        className='h-[344px] object-cover object-center sm:h-[321px] w-full rounded-xl'
         src={data.image}
         width={316}
         height={321}
