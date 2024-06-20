@@ -21,7 +21,7 @@ const TeamCard = (props: IProps) => {
   return (
     <>
       <Image
-        className='h-[321px] w-full rounded-xl'
+        className='h-[344px] sm:h-[321px] w-full rounded-xl'
         src={data.image}
         width={316}
         height={321}
@@ -31,13 +31,13 @@ const TeamCard = (props: IProps) => {
       <h2 className='tex-black mt-[26px] text-center text-xl font-semibold leading-[120%] md:text-2xl'>
         {data.name}
       </h2>
-      <Paragraph small className='mt-[14px]'>
+      <Paragraph small className='mt-2 md:mt-3.5'>
         {data.profession}
       </Paragraph>
-      <Paragraph small className='mt-[14px] italic !leading-[160%]'>
+      <Paragraph small className='mt-3 md:mt-3.5 italic !leading-[160%]'>
         {data.about}
       </Paragraph>
-      <div className='mt-[26px] flex items-center justify-center gap-2'>
+      <div className='mt-6 md:mt-[26px] flex items-center justify-center gap-2'>
         <Link
           aria-label='facebook'
           className='group'
