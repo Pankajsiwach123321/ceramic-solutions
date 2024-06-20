@@ -38,16 +38,36 @@ const TeamCard = (props: IProps) => {
         {data.about}
       </Paragraph>
       <div className='mt-[26px] flex items-center justify-center gap-2'>
-        <Link className='group' href={data.facebook} target='_blank'>
+        <Link
+          aria-label='facebook'
+          className='group'
+          href={data.facebook}
+          target='_blank'
+        >
           <Facebook />
         </Link>
-        <Link className='group' href={data.instagram} target='_blank'>
+        <Link
+          aria-label='instagram'
+          className='group'
+          href={data.instagram}
+          target='_blank'
+        >
           <Instagram />
         </Link>
-        <Link className='group' href={data.xtwitter} target='_blank'>
+        <Link
+          aria-label='xtwitter'
+          className='group'
+          href={data.xtwitter}
+          target='_blank'
+        >
           <XTwitter />
         </Link>
-        <Link className='group' href={data.linkedIn} target='_blank'>
+        <Link
+          aria-label='linkedIn'
+          className='group'
+          href={data.linkedIn}
+          target='_blank'
+        >
           <LinkedIn />
         </Link>
       </div>
