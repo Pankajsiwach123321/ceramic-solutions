@@ -21,14 +21,14 @@ const OurTeam = () => {
           modules={[Pagination]}
         >
           {ourTeam.map((obj, i) => (
-            <SwiperSlide key={i} className='!flex !justify-center'>
-              <div className='mt-8 w-[364px] pb-[51px] sm:mt-10'>
+            <SwiperSlide key={i} className='!flex h-full !justify-center'>
+              <div className='mt-8 w-[364px] pb-[51px] h-auto sm:mt-10'>
                 <TeamCard data={obj} />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className='mt-8 hidden flex-wrap justify-center gap-6 lg:flex'>
+        <div className='hidden flex-wrap justify-center gap-x-6 lg:flex'>
           {ourTeam.map((obj, i) => (
             <div key={i} className='md:mt-14 lg:w-[364px]'>
               <TeamCard data={obj} />

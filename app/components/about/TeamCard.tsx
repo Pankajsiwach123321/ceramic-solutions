@@ -28,26 +28,26 @@ const TeamCard = (props: IProps) => {
         sizes="100vw"
         alt='home-images'
       />
-      <h2 className='tex-black mt-6 text-center text-xl font-semibold leading-[120%] md:text-2xl'>
+      <h2 className='tex-black mt-[26px] text-center text-xl font-semibold leading-[120%] md:text-2xl'>
         {data.name}
       </h2>
-      <Paragraph small className='mt-3'>
+      <Paragraph small className='mt-[14px]'>
         {data.profession}
       </Paragraph>
-      <Paragraph small className='mt-3 italic !leading-[160%]'>
+      <Paragraph small className='mt-[14px] italic !leading-[160%]'>
         {data.about}
       </Paragraph>
-      <div className='mt-6 flex items-center justify-center gap-2'>
-        <Link href={data.facebook} target='_blank'>
+      <div className='mt-[26px] flex items-center justify-center gap-2'>
+        <Link className="group" href={data.facebook} target='_blank'>
           <Facebook />
         </Link>
-        <Link href={data.instagram} target='_blank'>
+        <Link className="group" href={data.instagram} target='_blank'>
           <Instagram />
         </Link>
-        <Link href={data.xtwitter} target='_blank'>
+        <Link className="group" href={data.xtwitter} target='_blank'>
           <XTwitter />
         </Link>
-        <Link href={data.linkedIn} target='_blank'>
+        <Link className="group" href={data.linkedIn} target='_blank'>
           <LinkedIn />
         </Link>
       </div>

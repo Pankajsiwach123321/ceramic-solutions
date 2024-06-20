@@ -227,6 +227,7 @@ export const Facebook: React.FC<IconProps> = ({}) => {
     <svg
       width='32'
       height='32'
+      className="group-hover:scale-[1.09] duration-300"
       viewBox='0 0 32 32'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -239,7 +240,11 @@ export const Facebook: React.FC<IconProps> = ({}) => {
       </g>
       <defs>
         <clipPath id='clip0_1_1318'>
-          <rect width='32' height='32' fill='white' />
+          <rect
+            width='32'
+            height='32'
+            fill='white'
+          />
         </clipPath>
       </defs>
     </svg>
@@ -250,6 +255,7 @@ export const Instagram: React.FC<IconProps> = ({}) => {
     <svg
       width='32'
       height='32'
+      className='duration-300 group-hover:scale-[1.09]'
       viewBox='0 0 32 32'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -278,6 +284,7 @@ export const XTwitter: React.FC<IconProps> = ({}) => {
       width='32'
       height='32'
       viewBox='0 0 32 32'
+      className='duration-300 group-hover:scale-[1.09]'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >
@@ -298,6 +305,7 @@ export const LinkedIn: React.FC<IconProps> = ({}) => {
       width='32'
       height='32'
       viewBox='0 0 32 32'
+      className='duration-300 group-hover:scale-[1.09]'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >

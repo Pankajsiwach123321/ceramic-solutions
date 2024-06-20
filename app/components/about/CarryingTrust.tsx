@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const CarryingTrust = () => {
   return (
-    <section className='pb-20 sm:pb-24 lg:pb-[140px]'>
+    <section>
       <div className='container mx-auto w-full px-6 md:px-5 xl:max-w-[1180px]'>
         <div className='relative z-[1] rounded-6 bg-red p-6 sm:p-8 md:p-12 lg:pb-[134px] lg:pl-16 lg:pr-[479px] lg:pt-16'>
           <PrimaryHeading

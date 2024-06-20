@@ -11,7 +11,7 @@ export default function Home() {
       <CarryingTrust />
       <ChooseUs />
       <OurProcess />
-      <GetInTouch/>
+      {/* <GetInTouch/> */}
     </>
   );
 }
