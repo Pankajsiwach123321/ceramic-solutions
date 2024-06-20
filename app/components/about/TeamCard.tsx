@@ -28,16 +28,16 @@ const TeamCard = (props: IProps) => {
         sizes='100vw'
         alt='home-images'
       />
-      <h2 className='tex-black mt-[26px] text-center text-xl font-semibold leading-[120%] md:text-2xl'>
+      <h2 className='tex-black mt-6 text-center text-xl font-semibold !leading-160 md:text-2xl'>
         {data.name}
       </h2>
-      <Paragraph small className='mt-2 md:mt-3.5'>
+      <Paragraph small className='mt-2 md:mt-3'>
         {data.profession}
       </Paragraph>
-      <Paragraph small className='mt-3 md:mt-3.5 italic !leading-[160%]'>
+      <Paragraph small className='mt-3 italic'>
         {data.about}
       </Paragraph>
-      <div className='mt-6 md:mt-[26px] flex items-center justify-center gap-2'>
+      <div className='mt-6 flex items-center justify-center gap-2'>
         <Link
           aria-label='facebook'
           className='group'
