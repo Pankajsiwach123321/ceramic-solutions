@@ -7,6 +7,28 @@ html,
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+
 .text_stroke_1:hover {
   -webkit-text-stroke: 1px;
+}
+
+/* swiper dots modify team  */
+.swiper-pagination {
+  bottom: 0 !important;
+  transform: translateX(-50%) !important;
+  left: 50% !important;
+  width: 96px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+  background: #D9D9D9 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FF0000 !important;
 }

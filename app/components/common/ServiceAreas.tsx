@@ -25,7 +25,7 @@ const ServiceAreas = () => {
               key={index}
               className='w-[calc(50%-10px)] max-[389px]:w-[calc(50%-6px)] md:w-[calc(33.3%-16px)]'
             >
-              <WhiteCard className='md:!rounded-6 !rounded-4 flex items-center gap-3 px-[15px] py-3 max-[450px]:gap-2 max-[389px]:px-2 sm:p-5 lg:p-6'>
+              <WhiteCard className='md:!rounded-6 !rounded-4 flex items-center gap-3 px-[15px] py-3 max-[450px]:gap-2 max-[389px]:px-2 sm:p-5 lg:p-6'> 
                 <ServicesLocation className='h-auto w-10 min-w-7 max-[450px]:w-7 md:w-12' />{" "}
                 <span className='ms:text-xl text-lg font-semibold text-black max-[450px]:text-sm lg:text-2xl'>
                   {value}

@@ -75,7 +75,7 @@ export default function Swiper(props) {
   );
 }
 
-export function SwiperSlide(props) {
+export function SwiperSlides(props) {
   const { children, ...rest } = props;
 
   return <swiper-slide {...rest}>{children}</swiper-slide>;
