@@ -14,11 +14,11 @@ const OurProcess = () => {
           Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt
           primasofi dede facebooka: förutom tivaligt.
         </Paragraph>
-        <div className='relative mt-8 flex flex-wrap justify-center lg:mt-14 gap-y-8 -mx-3'>
+        <div className='relative -mx-3 mt-8 flex flex-wrap justify-center gap-y-8 lg:mt-14'>
           {chooseUsListData.map((obj, index) => (
             <div
               key={index}
-              className='relative z-10 xl:w-2/6 md:w-1/2 sm:w-5/6 w-full px-3'
+              className='relative z-10 w-full px-3 sm:w-5/6 md:w-1/2 xl:w-2/6'
             >
               <div className='mx-auto mb-8 flex h-[88px] w-[88px] items-center justify-center rounded-full bg-red md:mb-0 xl:mb-9'>
                 <p className='text-custom-3xl font-semibold leading-126 text-white'>
@@ -26,7 +26,7 @@ const OurProcess = () => {
                 </p>
               </div>
               <div className='mx-auto hidden h-8 w-0 border-l-2 border-dashed border-black md:block xl:hidden'></div>
-              <WhiteCard className='mx-auto max-md:p-4'>
+              <WhiteCard className='mx-auto max-md:p-4 max-sm:max-w-[364px]'>
                 <span>{obj.icon}</span>
                 <h3 className='mt-4 text-xl font-semibold !leading-160 text-natural-black sm:text-2xl md:mt-6'>
                   {obj.title}

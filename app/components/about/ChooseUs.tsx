@@ -15,7 +15,7 @@ const ChooseUs = () => {
       <div className='-mx-3 mt-9 flex flex-wrap justify-center gap-y-8 lg:mt-14'>
         {chooseUsListData.map((obj, index) => (
           <div key={index} className='w-full px-3 sm:w-5/6 md:w-1/2 xl:w-2/6'>
-            <WhiteCard className='mx-auto max-md:p-4'>
+            <WhiteCard className='mx-auto max-md:p-4 max-sm:max-w-[364px]'>
               <span>{obj.icon}</span>
               <h3 className='mt-4 text-xl font-semibold !leading-160 text-natural-black sm:text-2xl md:mt-6'>
                 {obj.title}
