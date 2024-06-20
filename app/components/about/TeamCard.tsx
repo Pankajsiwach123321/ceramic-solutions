@@ -9,7 +9,7 @@ interface IProps {
     about: string;
     profession: string;
     name: string;
-    image: any;
+    image: string;
     facebook: string;
     instagram: string;
     xtwitter: string;
@@ -25,7 +25,7 @@ const TeamCard = (props: IProps) => {
         src={data.image}
         width={316}
         height={321}
-        sizes="100vw"
+        sizes='100vw'
         alt='home-images'
       />
       <h2 className='tex-black mt-[26px] text-center text-xl font-semibold leading-[120%] md:text-2xl'>
@@ -38,16 +38,16 @@ const TeamCard = (props: IProps) => {
         {data.about}
       </Paragraph>
       <div className='mt-[26px] flex items-center justify-center gap-2'>
-        <Link className="group" href={data.facebook} target='_blank'>
+        <Link className='group' href={data.facebook} target='_blank'>
           <Facebook />
         </Link>
-        <Link className="group" href={data.instagram} target='_blank'>
+        <Link className='group' href={data.instagram} target='_blank'>
           <Instagram />
         </Link>
-        <Link className="group" href={data.xtwitter} target='_blank'>
+        <Link className='group' href={data.xtwitter} target='_blank'>
           <XTwitter />
         </Link>
-        <Link className="group" href={data.linkedIn} target='_blank'>
+        <Link className='group' href={data.linkedIn} target='_blank'>
           <LinkedIn />
         </Link>
       </div>

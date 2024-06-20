@@ -15,13 +15,6 @@ import wallTilingImage from "../../../public/assets/images/homepage/wall-tiling.
 import adaShowersImage from "../../../public/assets/images/homepage/ada-showers-img.png";
 import fireplaceTilingImage from "../../../public/assets/images/homepage/fireplace-tiling.png";
 
-import funnyGuy from "../../../public/assets/images/about/webp/funny-guy.webp";
-import longHair from "../../../public/assets/images/about/webp/hair-man.webp";
-import smileGirl from "../../../public/assets/images/about/webp/girl-smile.webp";
-import grayhairGirl from "../../../public/assets/images/about/webp/gray-hair-girl.webp";
-import glassesGirl from "../../../public/assets/images/about/webp/smile-glass-man.webp";
-import haircutBoy from "../../../public/assets/images/about/webp/haircut-boy.webp";
-
 export const chooseUsListData = [
   {
     icon: <ChooseStarIcon />,
@@ -219,7 +212,7 @@ export const footerLinks = [
 ];
 export const ourTeam = [
   {
-    image: funnyGuy,
+    image: "/assets/images/about/webp/funny-guy.webp",
     name: "Drew Anderson",
     profession: "Founder & CEO",
     about: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. ",
@@ -229,7 +222,7 @@ export const ourTeam = [
     linkedIn: "https://www.linkedin.com/",
   },
   {
-    image: longHair,
+    image: "/assets/images/about/webp/hair-man.webp",
     name: "Drew Anderson",
     profession: "Founder & CEO",
     about: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. ",
@@ -239,7 +232,7 @@ export const ourTeam = [
     linkedIn: "https://www.linkedin.com/",
   },
   {
-    image: smileGirl,
+    image: "/assets/images/about/webp/girl-smile.webp",
     name: "Drew Anderson",
     profession: "Founder & CEO",
     about: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. ",
@@ -249,7 +242,7 @@ export const ourTeam = [
     linkedIn: "https://www.linkedin.com/",
   },
   {
-    image: grayhairGirl,
+    image: "/assets/images/about/webp/gray-hair-girl.webp",
     name: "Drew Anderson",
     profession: "Founder & CEO",
     about: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. ",
@@ -259,7 +252,7 @@ export const ourTeam = [
     linkedIn: "https://www.linkedin.com/",
   },
   {
-    image: glassesGirl,
+    image: "/assets/images/about/webp/smile-glass-man.webp",
     name: "Drew Anderson",
     profession: "Founder & CEO",
     about: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. ",
@@ -269,7 +262,7 @@ export const ourTeam = [
     linkedIn: "https://www.linkedin.com/",
   },
   {
-    image: haircutBoy,
+    image: "/assets/images/about/webp/haircut-boy.webp",
     name: "Drew Anderson",
     profession: "Founder & CEO",
     about: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga. ",
