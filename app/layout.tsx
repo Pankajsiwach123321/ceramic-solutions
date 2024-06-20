@@ -85,8 +85,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.variable} font-inter`}>
-        {/* <Header />
-        <Hero/> */}
+        <Header />
+        <Hero />
         {children}
         {/* <Footer /> */}
       </body>
